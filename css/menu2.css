@@ -1,0 +1,61 @@
+.toggle {
+  position : relative ;
+  display : inline-block;
+  width : 100px;
+  height : 48px;
+  background-color: red;
+  border-radius: 30px;
+  border: 2px solid gray;
+  margin-left: -22%;
+}
+.toggle:after {
+  content: '';
+  position: absolute;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  background-color: white;
+  top: 1px;
+  margin-left: 1px;
+  transition:  all 0.5s;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: bold;
+  left: -15px;
+}
+.checkbox:checked + .toggle::after {
+  left : 52px;
+}
+.checkbox:checked + .toggle {
+  background-color: blue;
+}
+.checkbox {
+  display : none;
+}
+
+.selector {
+  position: absolute;
+  margin-left: 150px;
+  font: bold 1.5em arial;
+}
+.selector li { 
+  margin: 0px 5px; 
+  padding: 0.1em 1em 0.5em 1em; 
+  background-color: #9933cc; 
+  width: 12%;
+}
+.subseccion1 { 
+  position: absolute; 
+  background-color: green; 
+  font:normal 1.3em arial;  
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.subseccion1 :hover{ 
+  opacity: 0.4;
+}
+.selector li:hover { 
+  background-color: blue; 
+}

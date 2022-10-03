@@ -1,0 +1,238 @@
+body {
+  background: #800080;
+  color: black;
+  font-family: sans-serif;
+  line-height: 1.2;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.footer {
+  background-color: #CCCCCC;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+}  
+
+label {
+  transform: scale(1);
+}
+label input {
+  display: none;
+}
+label div {
+  display: block;
+  width: 140px;
+  height: 10px;
+  position: absolute;
+  left: 40%;
+  top: 0%;
+  border-radius: 25px;
+  display: inline-flex;
+  transform:translate(-430%,-70%);
+}
+label div:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 46px;
+  width: 90px;
+  left: 100px;
+  top: 7px;
+  border-radius: 23px;
+  background: #00BBFF;
+  transition: 0.2s;
+}
+label input:checked + div:after {
+  background: #1EF763;
+}
+label input:checked + div > .off {
+  color: transparent;
+}
+label input:checked + div > .on {
+  color: black;
+}
+label:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: -2px;
+  z-index: -1;
+}
+label:hover {
+  cursor: pointer;
+}
+label:focus, label:active {
+  outline: 0;
+}
+.on, .off {
+  text-transform: uppercase;
+  position: absolute;
+  left: 80%;
+  top: 30%;
+  transform: translateY(-50%);
+  font-size: 1em;
+  font-weight: 500;
+  z-index: 2;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  letter-spacing: 1px;
+  transition: 0.25s;
+}
+.on {
+  color: transparent;
+  top: 30px;
+  margin-left: 1%;
+  font-weight:bold;
+  font-size: 19px;
+}
+.off {
+  left: initial;
+  top: 30px;
+  margin-left: 80%;
+  color: black;
+  font-size: 20px;
+  font-weight:bold;
+}
+.color_inicio{
+  background-color: #999999;
+  margin-top: -7px;
+  position: absolute;
+  width: 100%;
+  height: 55px;  
+}  
+.imgN {
+  mix-blend-mode: darken;
+  z-index: 100px;
+  position: absolute;
+  -webkit-transform: translate(-50%,104%);
+}
+.imgA {
+  mix-blend-mode: darken;
+  z-index: 100px;
+  position: absolute;
+  -webkit-transform: translate(-50%,105%);
+}
+.imgR {
+  mix-blend-mode: darken;
+  z-index: 100px;
+  position: absolute;
+  -webkit-transform: translate(-50%,104%);
+}
+.imgX {
+  z-index: 100px;
+  position: absolute;
+  transform:translate(-50%,105%);
+  -webkit-transform: translate(-50%,105%);
+}
+
+select:focus{ outline: 0;}
+
+.welcomeScreen{
+  background-color: white;
+  font-size: 17px;
+  width: 500px;
+  text-align: center;
+  border-radius: 5px;
+  position: static;
+  margin: 20px auto;
+  padding: 10px;
+  vertical-align: middle;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  z-index: 100001;
+  transition: transform .3s,opacity .2s,-webkit-transform .3s;
+}
+.swal-button{
+  background-color:#606;
+  color:#fff;
+  border:none;
+  box-shadow:none;
+  border-radius:5px;
+  font-weight:600;
+  font-size:14px;
+  padding:10px 24px;
+  margin:0;
+  cursor:pointer;
+}
+.swal-button:hover{
+  background-color:#78cbf2;
+  cursor:pointer;
+}
+.menu-button{
+  position: absolute;
+  top: -0.2%;
+  left: 80%;
+  background-color:#606;
+  color:#fff;
+  border-radius:15px;
+  font-weight:600;
+  font-size:22px;
+  padding:10px 24px;
+  font-weight:bold;
+  margin:0;
+  cursor:pointer
+}
+.menu-button:hover{
+  background-color:green;
+}
+
+.menuScreen {
+  background-color: white;
+  font-size: 17px;
+  width: 400px;
+  height: 310px;
+  text-align: center;
+  border-radius: 5px;
+  position: static;
+  margin-top: 7%;
+  margin-left: 36%;
+  border-radius:15px;
+  padding: 10px;
+  vertical-align: middle;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  z-index: 100001;
+  transition: transform .3s,opacity .2s,-webkit-transform .3s;
+}
+.swal-content {
+  margin-top: 10px;
+  font-size: medium;
+}
+.swal-title{
+  color:black;
+  text-transform:none;
+  position:relative;
+  padding: 5px;
+  font-size:27px;
+  text-align:center;
+  font-weight:bold;
+}
+.grafico{
+  margin-left: 40%;
+  background:transparent;
+  padding:2px;
+  width:70px;
+  height:70px;
+}
+.graficopc0{border-radius:15px;border:2px solid rgb(170,170,170);}
+.graficopc1{border:2px solid transparent;}
+.imgrafico{
+  width: 60px;
+  height: 60px;
+  cursor:pointer;
+}
+.imgok{
+  width: 52px;
+  height: 52px;
+  margin-left: .5%;
+  margin-bottom: -13%;
+  cursor: pointer;
+  z-index: 20;
+}
